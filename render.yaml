@@ -1,8 +1,8 @@
 services:
   - type: cron
     name: job-alert
-    schedule: "0 6 * * *"  # كل يوم مع 6 صباحاً UTC
+    schedule: "0 5 * * *"  # مع 6 صباحاً بتوقيت كازا
     runtime: python
-    plan: free
+    plan: free             # هذا مهم بزاف
     buildCommand: ""
     startCommand: "python job_alert_bot.py"
